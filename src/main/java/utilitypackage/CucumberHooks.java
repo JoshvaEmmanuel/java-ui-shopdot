@@ -22,7 +22,6 @@ public class CucumberHooks extends EnvironmentSettings{
     @Before
     public void launchUrl() {
        super.browserSetup();
-        open(getProperty("baseurl"));
     }
 
     @After

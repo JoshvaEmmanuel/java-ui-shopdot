@@ -13,7 +13,7 @@ import java.util.Properties;
 public class EnvironmentSettings {
 
     private static final String PROPERTY_FILE = "config.properties";
-    private Properties properties;
+    private static Properties properties;
 
     public EnvironmentSettings() {
         properties = new Properties();
@@ -28,7 +28,7 @@ public class EnvironmentSettings {
         }
     }
 
-    public String getProperty(String key) {
+    public static  String getProperty(String key) {
         return properties.getProperty(key);
     }
 
